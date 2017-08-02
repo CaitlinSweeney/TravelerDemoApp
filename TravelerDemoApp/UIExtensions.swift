@@ -1,5 +1,5 @@
 //
-//  UIColorExtension.swift
+//  UIExtensions.swift
 //  TravelerDemoApp
 //
 //  Created by Caitlin Marie Sweeney on 8/1/17.
@@ -95,4 +95,72 @@ extension UIColor {
             blue: 140.0/255.0,
             alpha: alpha)
     }
+    
+    public class func navy() -> UIColor {
+        return UIColor(
+            red: 13.0/255.0,
+            green: 85.0/255.0,
+            blue: 109.0/255.0,
+            alpha: 1.0)
+    }
+    
+    public class func navy(alpha: CGFloat) -> UIColor {
+        return UIColor(
+            red: 13.0/255.0,
+            green: 85.0/255.0,
+            blue: 109.0/255.0,
+            alpha: alpha)
+    }
 }
+
+extension UIFont {
+    
+    public enum AppFontStyle {
+        case regular
+        case regularItalic
+        case medium
+        case semibold
+        case bold
+        case heavy
+    }
+    
+    public class func defaultFont(
+        size: CGFloat,
+        fontStyle: AppFontStyle) -> UIFont {
+        
+        switch fontStyle {
+        case .regular:
+            return UIFont.systemFont(
+                ofSize: size,
+                weight: UIFontWeightRegular)
+            
+        case .medium:
+            return UIFont.systemFont(
+                ofSize: size,
+                weight: UIFontWeightMedium)
+            
+        case .semibold:
+            return UIFont.systemFont(
+                ofSize: size,
+                weight: UIFontWeightSemibold)
+            
+        case .bold:
+            return UIFont.systemFont(
+                ofSize: size,
+                weight: UIFontWeightBold)
+            
+        case .heavy:
+            return UIFont.systemFont(
+                ofSize: size,
+                weight: UIFontWeightHeavy)
+            
+        case .regularItalic:
+            return UIFont.italicSystemFont(ofSize: size)
+        }
+    }
+    
+    public func heightToFit() -> CGFloat {
+        return self.pointSize + 2.0
+    }
+}
+
