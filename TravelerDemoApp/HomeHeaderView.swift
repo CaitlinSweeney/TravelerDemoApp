@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PureLayout
 
 class HeaderView: UIView {
     
@@ -51,7 +52,7 @@ class HeaderView: UIView {
     }
     
     fileprivate func addSubviews() {
-        backgroundColor = .sunflower()
+        backgroundColor = .sunburst()
         clipsToBounds = true
         isUserInteractionEnabled = true
         

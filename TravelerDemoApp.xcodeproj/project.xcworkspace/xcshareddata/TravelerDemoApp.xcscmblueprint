@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C6EE74DAC78E374F46DA0F7FBA38489D9B613A36",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "32724440B2C5177107D5861E13BA6272A8080596" : 9223372036854775807,
+    "C6EE74DAC78E374F46DA0F7FBA38489D9B613A36" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BB2BDB19-E3B3-4CFB-A34F-7607A16232CB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "32724440B2C5177107D5861E13BA6272A8080596" : "",
+    "C6EE74DAC78E374F46DA0F7FBA38489D9B613A36" : "TravelerDemoApp\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TravelerDemoApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TravelerDemoApp.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CaitlinSweeney\/TravelerDemoApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "32724440B2C5177107D5861E13BA6272A8080596"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:CaitlinSweeney\/TravelerDemoApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C6EE74DAC78E374F46DA0F7FBA38489D9B613A36"
+    }
+  ]
+}

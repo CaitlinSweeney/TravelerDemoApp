@@ -1,0 +1,6 @@
+framework module Pods_TravelerDemoAppUITests {
+  umbrella header "Pods-TravelerDemoAppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
