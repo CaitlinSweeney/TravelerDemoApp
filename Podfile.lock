@@ -1,27 +1,12 @@
 PODS:
-  - Cache (2.3.0):
-    - CryptoSwift
-  - CPLoadingView (2.0.1)
-  - CryptoSwift (0.6.9)
-  - DynamicBlurView (1.3.0)
-  - GradientView (2.2.0)
   - PureLayout (3.0.2)
 
 DEPENDENCIES:
-  - Cache (~> 2.2)
-  - CPLoadingView (~> 2.0)
-  - DynamicBlurView (~> 1.3)
-  - GradientView (~> 2.2)
   - PureLayout (~> 3.0)
 
 SPEC CHECKSUMS:
-  Cache: 077e4e799c394ccffc18bb3240f5b55cb9b3cc1b
-  CPLoadingView: c142e6658b2ed87aeead5beea99b7092edfa0059
-  CryptoSwift: a22f6ba238e9ce4d26ee7bf45b9ed82e7122d4a0
-  DynamicBlurView: ca9f6836d4123e20ac1636814077b278b34dd2a2
-  GradientView: a5397174594f158dc1511127f2004ec25c9d2300
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
 
-PODFILE CHECKSUM: e72861eb532805c32ea9c5058805b247e65404d5
+PODFILE CHECKSUM: 2e901c2e85930139dd09649faa380d7a5849b269
 
 COCOAPODS: 1.2.1

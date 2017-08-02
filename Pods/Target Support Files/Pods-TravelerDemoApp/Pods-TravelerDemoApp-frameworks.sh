@@ -89,19 +89,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CPLoadingView/CPLoadingView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Cache/Cache.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/CryptoSwift/CryptoSwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/GradientView/GradientView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/CPLoadingView/CPLoadingView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Cache/Cache.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/CryptoSwift/CryptoSwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/DynamicBlurView/DynamicBlurView.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/GradientView/GradientView.framework"
   install_framework "$BUILT_PRODUCTS_DIR/PureLayout/PureLayout.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

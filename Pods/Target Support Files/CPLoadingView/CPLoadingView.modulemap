@@ -1,6 +1,0 @@
-framework module CPLoadingView {
-  umbrella header "CPLoadingView-umbrella.h"
-
-  export *
-  module * { export * }
-}
