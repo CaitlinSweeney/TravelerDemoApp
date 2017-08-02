@@ -2,35 +2,30 @@
 //  CityCollectionViewController.swift
 //  TravelerDemoApp
 //
-//  Created by Caitlin Marie Sweeney on 8/1/17.
+//  Created by Caitlin Marie Sweeney on 8/2/17.
 //  Copyright © 2017 Caitlin Marie Sweeney. All rights reserved.
 //
 
 import UIKit
 
-class CityCollectionViewController: UICollectionViewController {
-    
-    // MARK: Outlets
-    
-    @IBOutlet weak var navBarView: NavBarView!
-    
-    // MARK: Init
-    
+class CityCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
     
     // MARK: UICollectionViewDataSource
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
     
-    override func collectionView(
+    func collectionView(
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -48,40 +43,17 @@ class CityCollectionViewController: UICollectionViewController {
             cell = CityViewCell()
         }
         return cell
-       // cell.cityName = "City"
+        // cell.cityName = "City"
     }
     
-    // MARK: UICollectionViewDelegate
-    
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-     override func collectionView(
-        _ collectionView: UICollectionView,
-        shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        
-        return true
-     }
- 
-     // Uncomment this method to specify if the specified item should be selected
-     override func collectionView(
-        _ collectionView: UICollectionView,
-        shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        
-        return true
-     }
- 
     /*
-     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-     }
-     */
-    
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
 }

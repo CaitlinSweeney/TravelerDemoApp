@@ -43,6 +43,9 @@
                             <outlet property="titleView" destination="zEz-Bh-rD0" id="5cg-x3-SdB"/>
                         </connections>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navBarView" destination="U1C-iv-Z4V" id="hr4-AW-HPf"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2lq-f9-J07" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
