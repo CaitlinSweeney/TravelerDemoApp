@@ -8,6 +8,8 @@
 
 import UIKit
 
+let cities = CityModel()
+
 class CityModel: NSObject {
     
     // MARK: Properties
@@ -17,7 +19,7 @@ class CityModel: NSObject {
     var cityName: String = ""
     var cityDescription: String = ""
     
-    let cities = [
+    let city = [
         [
             "cityName": "Dublin",
             "image": "photo 01",

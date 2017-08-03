@@ -13,7 +13,7 @@ import PureLayout
 //    func didTapMenu()
 //}
 
-class NavBarView: UINavigationBar {
+class NavBarView: UIView {
     
     // MARK: Delegate
     
