@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D6710653E1DAAF1CCA733464E51A654 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D6710653E1DAAF1CCA733464E51A654 /* PureLayoutDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C981A91C88F23BE8EF1E2CE83157ED /* PureLayoutDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17E4207DA844575C8F699B69D500177A /* Pods-TravelerDemoAppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C29EED9BB8279FC7D1EC0751B41C6AC /* Pods-TravelerDemoAppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A3306B5D4BD77E19A9327AEE6141B0E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */; };
+		1A3306B5D4BD77E19A9327AEE6141B0E /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 14678B0D7F11AEA6284724D0FA508450 /* NSLayoutConstraint+PureLayout.m */; };
 		27B9FAFABD0FB605C3B4A6B3F53832B6 /* Pods-TravelerDemoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B9B1059ED8B524633AEA89F0B82483 /* Pods-TravelerDemoApp-dummy.m */; };
-		362566CD7840535F325E643B05DF44EA /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */; };
+		362566CD7840535F325E643B05DF44EA /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D593583D35716327B55D03AC4C20286 /* ALView+PureLayout.m */; };
 		3D972E0D66E3A0D1E7E71301D4121A11 /* Pods-TravelerDemoAppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12F899DBD50E148436E26BEC9D2AEBDB /* Pods-TravelerDemoAppUITests-dummy.m */; };
-		3FECB97D8D7FEDF0811E361323EC60DD /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */; };
+		3FECB97D8D7FEDF0811E361323EC60DD /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D4271C6E87593F64B3068D2EA630205A /* NSArray+PureLayout.m */; };
 		4BFEBD99524945B2A90D173BF0F3D825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		4E0B59E6D31C99BBABBF73D502924952 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E0B59E6D31C99BBABBF73D502924952 /* NSLayoutConstraint+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B44D0EE1A868A6F43916BA50B27894B /* NSLayoutConstraint+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64125C6ED13305FC9AD6651429B94B88 /* Pods-TravelerDemoAppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D367B53D976DF65B9C7143ECECF931AC /* Pods-TravelerDemoAppTests-dummy.m */; };
-		77F7AE5E3C3C0B9CDB036B5AD82CCC40 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77F7AE5E3C3C0B9CDB036B5AD82CCC40 /* NSArray+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE34E7059E65DE94EB294525E860E17 /* NSArray+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88E52698C978702113323A2CF642830D /* Pods-TravelerDemoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3944D8FFA3E8161A1DD6C2C8477ECB24 /* Pods-TravelerDemoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		912499CDEA0055E543DAB07ACCF30567 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9445E837CD7D9EF94A1E78E67825719B /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		912499CDEA0055E543DAB07ACCF30567 /* PureLayout+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 911C53E4079FEB1406FB85152B69FF66 /* PureLayout+Internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9445E837CD7D9EF94A1E78E67825719B /* PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F4C3321B481959B2445B2DD6B5C2B5 /* PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A402C6BA8819F6E3A146FAF810D0D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AA06D3827C8D1F6BB0AFA6E1F6A8C624 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA06D3827C8D1F6BB0AFA6E1F6A8C624 /* PureLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2EE2CB248F0AE58871130CF5DFB6A4 /* PureLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BCBE5D9D7CF7B9397C3F2408072F5666 /* Pods-TravelerDemoAppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78279252F5C5FEDA65F7F081B516B501 /* Pods-TravelerDemoAppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C703DCB61903B7F62C6A295884648FD4 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */; };
-		D30E7F7C5EF600CE35BD3C16DC762505 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C703DCB61903B7F62C6A295884648FD4 /* PureLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F87AF466C2C86988B4ABA0E588ADC9E /* PureLayout-dummy.m */; };
+		D30E7F7C5EF600CE35BD3C16DC762505 /* ALView+PureLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 846086E66DFD4B803FC83129990FC3FA /* ALView+PureLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D73411CE6EB94F1DC07142D00CD4299B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F78E2718E07903B4634C83F9A58A74E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -41,56 +41,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
 		0770FCEABB8F1132967183C24FD2E984 /* Pods-TravelerDemoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelerDemoApp.modulemap"; sourceTree = "<group>"; };
 		0C29EED9BB8279FC7D1EC0751B41C6AC /* Pods-TravelerDemoAppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelerDemoAppUITests-umbrella.h"; sourceTree = "<group>"; };
 		0D6BD00A94A9EF03BC8AD7F6DF2109C5 /* Pods-TravelerDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		0E2D37AB1A61EC4F1C7AC8DD7D72F55B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12F899DBD50E148436E26BEC9D2AEBDB /* Pods-TravelerDemoAppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelerDemoAppUITests-dummy.m"; sourceTree = "<group>"; };
+		14678B0D7F11AEA6284724D0FA508450 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		22422FD460490598E955E71B0915CCFC /* PureLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PureLayout.framework; path = PureLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23559975D64A2A38E679F5BAD1998455 /* Pods-TravelerDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		249938C44B3C707521E098F2C5086AD9 /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
-		256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
-		261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		2671033EC7198F3D9BA094CBB4A29840 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27ABAED84A53D2F3329B0951BC623886 /* PureLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PureLayout.xcconfig; sourceTree = "<group>"; };
+		2B44D0EE1A868A6F43916BA50B27894B /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
 		2D104144A01AE37B4E4288CC159F9B5A /* Pods-TravelerDemoAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelerDemoAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+PureLayout.h"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		2D593583D35716327B55D03AC4C20286 /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
+		2F87AF466C2C86988B4ABA0E588ADC9E /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
 		35BBC9B97508803C0D787379D93D0612 /* Pods-TravelerDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3944D8FFA3E8161A1DD6C2C8477ECB24 /* Pods-TravelerDemoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelerDemoApp-umbrella.h"; sourceTree = "<group>"; };
-		3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ALView+PureLayout.m"; path = "PureLayout/PureLayout/ALView+PureLayout.m"; sourceTree = "<group>"; };
 		42883660F544B29C756987B0A342DE46 /* Pods-TravelerDemoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		51CA5CE9C660791B0C7F06E5CB6A9DE8 /* Pods-TravelerDemoAppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoAppUITests-frameworks.sh"; sourceTree = "<group>"; };
-		5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
-		62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+PureLayout.m"; path = "PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		683ED4D96BE8269FF9A41609AC2A1809 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
 		6909CAD9CD606522D1FEB3720F0F1BCC /* Pods-TravelerDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2EE2CB248F0AE58871130CF5DFB6A4 /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
 		6D5250CDA09FA15EDE9073B5CB7C6781 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D986837FA46C6AB4A8D72FCAA1B4454 /* PureLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-prefix.pch"; sourceTree = "<group>"; };
-		6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PureLayout-umbrella.h"; sourceTree = "<group>"; };
 		6F79783BE3B716A107815137F3789F7F /* Pods_TravelerDemoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelerDemoAppUITests.framework; path = "Pods-TravelerDemoAppUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E2EDF3AB26BB1AEC2FEAAFB4B92F53 /* Pods-TravelerDemoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelerDemoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		74354672E56BC1F5AD794FC953921535 /* Pods-TravelerDemoAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoAppTests-frameworks.sh"; sourceTree = "<group>"; };
 		78279252F5C5FEDA65F7F081B516B501 /* Pods-TravelerDemoAppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelerDemoAppTests-umbrella.h"; sourceTree = "<group>"; };
 		7D041B0A98B9022A5C0808DE8E389A67 /* Pods-TravelerDemoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoApp-frameworks.sh"; sourceTree = "<group>"; };
-		808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PureLayout-dummy.m"; sourceTree = "<group>"; };
+		846086E66DFD4B803FC83129990FC3FA /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
 		8C66A2CBFFDB18382CED0F18C206FC59 /* Pods-TravelerDemoAppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelerDemoAppUITests.modulemap"; sourceTree = "<group>"; };
 		8DE009881C9A0B035610AD56EA548006 /* Pods-TravelerDemoAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelerDemoAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8F36880AC4CD8AC6B8E181C10D0D9112 /* Pods-TravelerDemoAppUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoAppUITests-resources.sh"; sourceTree = "<group>"; };
 		8FA7AA81485000DBB1B4F22EEB8A54A1 /* Pods-TravelerDemoAppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelerDemoAppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		911C53E4079FEB1406FB85152B69FF66 /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93FF1F2D052EA4144E91458AF9EB1B2C /* Pods-TravelerDemoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoApp-resources.sh"; sourceTree = "<group>"; };
 		94047249DFC2D55DB1074736B544D217 /* Pods-TravelerDemoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelerDemoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9E26578EECC887E44CA2FDCEB02C0526 /* Pods-TravelerDemoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelerDemoApp-acknowledgements.plist"; sourceTree = "<group>"; };
-		AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PureLayout+Internal.h"; path = "PureLayout/PureLayout/PureLayout+Internal.h"; sourceTree = "<group>"; };
+		A7F4C3321B481959B2445B2DD6B5C2B5 /* PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayout.h; path = PureLayout/PureLayout/PureLayout.h; sourceTree = "<group>"; };
 		AD1BF0175050530C23A001E248E2D47F /* Pods-TravelerDemoAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelerDemoAppTests.modulemap"; sourceTree = "<group>"; };
 		AD8F85454ECA6AC06528BAB60025EAEB /* Pods_TravelerDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelerDemoApp.framework; path = "Pods-TravelerDemoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B96A04A4EB64B351F4C0084CA9B66414 /* Pods-TravelerDemoAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelerDemoAppTests-resources.sh"; sourceTree = "<group>"; };
+		BAE34E7059E65DE94EB294525E860E17 /* NSArray+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+PureLayout.h"; path = "PureLayout/PureLayout/NSArray+PureLayout.h"; sourceTree = "<group>"; };
 		CEBCBBF2A092DAD45AF9448B330AA0E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D367B53D976DF65B9C7143ECECF931AC /* Pods-TravelerDemoAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelerDemoAppTests-dummy.m"; sourceTree = "<group>"; };
+		D4271C6E87593F64B3068D2EA630205A /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
 		D45DE395B44E7E29509F3B7B772AE330 /* Pods-TravelerDemoAppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelerDemoAppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+PureLayout.m"; path = "PureLayout/PureLayout/NSArray+PureLayout.m"; sourceTree = "<group>"; };
-		DC48A19E2AA264922693A9C30BC30743 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6591609208328DA9E34FA1AC17B501B /* PureLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PureLayout.modulemap; sourceTree = "<group>"; };
 		EF40E8B375BF8DA475282EDB9CC4B382 /* Pods_TravelerDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelerDemoAppTests.framework; path = "Pods-TravelerDemoAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ALView+PureLayout.h"; path = "PureLayout/PureLayout/ALView+PureLayout.h"; sourceTree = "<group>"; };
+		F6C981A91C88F23BE8EF1E2CE83157ED /* PureLayoutDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PureLayoutDefines.h; path = PureLayout/PureLayout/PureLayoutDefines.h; sourceTree = "<group>"; };
 		F8B9B1059ED8B524633AEA89F0B82483 /* Pods-TravelerDemoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelerDemoApp-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,6 +130,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27EF964E95D5AEC05B1AA14E7356BF8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				872093A1AB12F0806C60CAA063866F0E /* PureLayout */,
+				9E5CDE1916964C9209ED5EC6BDE9A8A3 /* SwiftLint */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2A64A7FCC75E3240F8A8EF654ED926CE /* Pods-TravelerDemoAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,20 +155,6 @@
 			);
 			name = "Pods-TravelerDemoAppUITests";
 			path = "Target Support Files/Pods-TravelerDemoAppUITests";
-			sourceTree = "<group>";
-		};
-		2F7CB2F8AA04108B4168449AFCA94214 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC48A19E2AA264922693A9C30BC30743 /* Info.plist */,
-				249938C44B3C707521E098F2C5086AD9 /* PureLayout.modulemap */,
-				01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */,
-				808D9E17BE044F47037C6ABD6F65EE32 /* PureLayout-dummy.m */,
-				6D986837FA46C6AB4A8D72FCAA1B4454 /* PureLayout-prefix.pch */,
-				6EFEA95188E08BEB23065B2AB052E7BC /* PureLayout-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PureLayout";
 			sourceTree = "<group>";
 		};
 		49ED0FFE1467347ED1CEE172910011E1 /* Pods-TravelerDemoApp */ = {
@@ -191,15 +186,47 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6129A1CE3848A1451B72BE3A63719112 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0E2D37AB1A61EC4F1C7AC8DD7D72F55B /* Info.plist */,
+				D6591609208328DA9E34FA1AC17B501B /* PureLayout.modulemap */,
+				27ABAED84A53D2F3329B0951BC623886 /* PureLayout.xcconfig */,
+				2F87AF466C2C86988B4ABA0E588ADC9E /* PureLayout-dummy.m */,
+				683ED4D96BE8269FF9A41609AC2A1809 /* PureLayout-prefix.pch */,
+				6C2EE2CB248F0AE58871130CF5DFB6A4 /* PureLayout-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PureLayout";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A2FDD832DA64F35B104DD4C55A31BF8E /* Pods */,
+				27EF964E95D5AEC05B1AA14E7356BF8B /* Pods */,
 				593728A89B7DBA2390FA608319C81DA6 /* Products */,
 				943A2A797124650A9256F3FBD8FCD2B5 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		872093A1AB12F0806C60CAA063866F0E /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				846086E66DFD4B803FC83129990FC3FA /* ALView+PureLayout.h */,
+				2D593583D35716327B55D03AC4C20286 /* ALView+PureLayout.m */,
+				BAE34E7059E65DE94EB294525E860E17 /* NSArray+PureLayout.h */,
+				D4271C6E87593F64B3068D2EA630205A /* NSArray+PureLayout.m */,
+				2B44D0EE1A868A6F43916BA50B27894B /* NSLayoutConstraint+PureLayout.h */,
+				14678B0D7F11AEA6284724D0FA508450 /* NSLayoutConstraint+PureLayout.m */,
+				A7F4C3321B481959B2445B2DD6B5C2B5 /* PureLayout.h */,
+				911C53E4079FEB1406FB85152B69FF66 /* PureLayout+Internal.h */,
+				F6C981A91C88F23BE8EF1E2CE83157ED /* PureLayoutDefines.h */,
+				6129A1CE3848A1451B72BE3A63719112 /* Support Files */,
+			);
+			name = PureLayout;
+			path = PureLayout;
 			sourceTree = "<group>";
 		};
 		943A2A797124650A9256F3FBD8FCD2B5 /* Targets Support Files */ = {
@@ -212,30 +239,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9C6F93A5AE4A9293598494393460DF93 /* PureLayout */ = {
+		9E5CDE1916964C9209ED5EC6BDE9A8A3 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				F3D3F05D324772E907DB1D4DA2C89AA2 /* ALView+PureLayout.h */,
-				3F6990C47F02B6691DD4DA9D4504A36B /* ALView+PureLayout.m */,
-				256CB866D56B919DA6C9ABF2C32B4D37 /* NSArray+PureLayout.h */,
-				D87500AA33CA4A933595B88AD6CA26C8 /* NSArray+PureLayout.m */,
-				2F7D472071E15F7DC98E66B5980E1549 /* NSLayoutConstraint+PureLayout.h */,
-				62FD488738DACC6BD28A4B8007AC9E22 /* NSLayoutConstraint+PureLayout.m */,
-				261FA9EFC65F5CA2F5CE7AF0D3ACE209 /* PureLayout.h */,
-				AA654F86E857710B01965E96AC15F25C /* PureLayout+Internal.h */,
-				5B859CA7D3A83073EE3A0EFE2138F31B /* PureLayoutDefines.h */,
-				2F7CB2F8AA04108B4168449AFCA94214 /* Support Files */,
 			);
-			name = PureLayout;
-			path = PureLayout;
-			sourceTree = "<group>";
-		};
-		A2FDD832DA64F35B104DD4C55A31BF8E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9C6F93A5AE4A9293598494393460DF93 /* PureLayout */,
-			);
-			name = Pods;
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -656,7 +665,7 @@
 		};
 		866C81D764B1537FB41AACF0A7F05D24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */;
+			baseConfigurationReference = 27ABAED84A53D2F3329B0951BC623886 /* PureLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -769,7 +778,7 @@
 		};
 		DC3C7F5054A4B37D2418C0B54FC0A1FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B056FE48A821CA3D3818E32A4CFEDF /* PureLayout.xcconfig */;
+			baseConfigurationReference = 27ABAED84A53D2F3329B0951BC623886 /* PureLayout.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

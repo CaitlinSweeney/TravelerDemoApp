@@ -9,20 +9,19 @@
 import UIKit
 import PureLayout
     
-//protocol NavBarViewDelegate: class {
-//    func didTapMenu()
-//}
+protocol NavBarViewDelegate: class {
+    func didTapMenu()
+}
 
 class NavBarView: UIView {
     
     // MARK: Delegate
     
-    //weak var delegate: NavBarViewDelegate?
+    weak var delegate: NavBarViewDelegate?
     
     // MARK: Constants
     
     static let padding: CGFloat = 10.0
-    
     let menuButtonWidth: CGFloat = 40.0
     
     // MARK: Properties
