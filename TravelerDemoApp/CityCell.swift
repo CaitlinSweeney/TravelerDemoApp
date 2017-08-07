@@ -15,7 +15,7 @@ class CityCell: UICollectionViewCell {
     static let cellID = "CityCell"
     static let cellHeight: CGFloat = 190.0
     static let cellWidth: CGFloat = 400.0
-    static let heartImageSize: CGFloat = 25.0
+    static let heartImageSize: CGFloat = 18.0
     static let buttonHeight: CGFloat = 40.0
     static let buttonWidth: CGFloat = 100.0
     
@@ -45,16 +45,14 @@ class CityCell: UICollectionViewCell {
     
     // MARK: Views
     
-     fileprivate lazy var heartLabel: UILabel = {
-        let label = UILabel()
+     fileprivate lazy var heartImage: UIImageView = {
+        let imageView = UIImageView()
         
-        label.font = UIFont.defaultFont(size: 16, fontStyle: .bold)
-        label.textColor = UIColor.white
-        //likesLabel.text = "♥︎ \(selectedRow["likes"]!) likes"
-        label.text = "♥︎"
-        label.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.masksToBounds = true
+        imageView.image = Resources.heartImage
+        imageView.tintColor = .white
         
-        return label
+        return imageView
     }()
     
      fileprivate lazy var likesLabel: UILabel = {
@@ -83,11 +81,13 @@ class CityCell: UICollectionViewCell {
         let label = UILabel()
         
         label.textAlignment = .center
-        label.font = UIFont.defaultFont(size: 14, fontStyle: .regular)
+        label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
         label.textColor = UIColor.white
         label.text = "1236 Visitors".uppercased()
         label.backgroundColor = .sky()
-        label.layer.cornerRadius = 4.0
+        label.layer.cornerRadius = 10.0
+        label.clipsToBounds = true
+        label.layer.masksToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
         
         return label
@@ -104,7 +104,7 @@ class CityCell: UICollectionViewCell {
 //        
         contentView.backgroundColor = .sky(alpha: 0.6)
         
-        contentView.addSubview(heartLabel)
+        contentView.addSubview(heartImage)
         contentView.addSubview(likesLabel)
         contentView.addSubview(cityLabel)
         contentView.addSubview(visitorLabel)
@@ -112,27 +112,21 @@ class CityCell: UICollectionViewCell {
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.autoPinEdgesToSuperviewEdges()
         
-        heartLabel.autoPinEdge(
+        heartImage.autoPinEdge(
             toSuperviewEdge: .top,
             withInset: 10.0)
-        heartLabel.autoPinEdge(
+        heartImage.autoPinEdge(
             toSuperviewEdge: .left,
-            withInset: 10.0)
+            withInset: 15.0)
+        heartImage.autoSetDimension(.height, toSize: CityCell.heartImageSize)
+        heartImage.autoSetDimension(.width, toSize: CityCell.heartImageSize)
         
         likesLabel.autoPinEdge(
             toSuperviewEdge: .top,
             withInset: 10.0)
-        likesLabel.autoPinEdge(
-            .left,
-            to: .right,
-            of: heartLabel,
-            withOffset: 5.0)
-//        likesLabel.autoSetDimension(
-//            .height,
-//            toSize: CityCell.cellWidth - 4.0)
-//        likesLabel.autoSetDimension(
-//            .width,
-//            toSize: CityCell.cellWidth - 4.0)
+        likesLabel.autoPinEdge(toSuperviewEdge: .left, withInset: CityCell.heartImageSize + 22.0)
+//        likesLabel.autoAlignAxis(.horizontal, toSameAxisOf: heartLabel, withOffset: -12.0)
+        likesLabel.autoSetDimension(.height, toSize: likesLabel.font.heightToFit())
         
         cityLabel.autoAlignAxis(toSuperviewAxis: .horizontal)
         cityLabel.autoAlignAxis(toSuperviewAxis: .vertical)

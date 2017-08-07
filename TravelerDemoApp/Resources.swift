@@ -19,7 +19,10 @@ struct Resources {
     fileprivate static let menuIcon = "MenuIcon"
     static let menuImage = UIImage(named: Resources.menuIcon)!.withRenderingMode(.alwaysTemplate)
     
-    static let dublinBgImageView = "DublinBgImage"
+    fileprivate static let heartIcon = "HeartIcon"
+    static let heartImage = UIImage(named: Resources.heartIcon)!.withRenderingMode(.alwaysTemplate)
+    
+    fileprivate static let dublinBgImageView = "DublinBgImage"
     static let dublinBgImage = UIImage(named: Resources.dublinBgImageView)!
 
 }
