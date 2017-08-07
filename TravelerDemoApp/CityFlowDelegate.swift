@@ -36,5 +36,27 @@ class CityFlowDelegate: UICollectionViewFlowLayout, UICollectionViewDelegateFlow
         selectCity?.didSelectCity(
             dataSource.cities[indexPath.row])
     }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let cellWidth = UIScreen.main.bounds.size.width
 
+        return CGSize(
+            width: cellWidth,
+            height: CityCell.cellHeight)
+    }
+    
+    func collectionView(
+        _ collectionView: UICollectionView,
+        layout collectionViewLayout: UICollectionViewLayout,
+        insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(
+            top: 0.0,
+            left: 0.0,
+            bottom: 0.0,
+            right: 0.0)
+    }
 }

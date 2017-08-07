@@ -13,7 +13,8 @@ class CityCell: UICollectionViewCell {
     // MARK: Constants
     
     static let cellID = "CityCell"
-    static let cellHeight: CGFloat = 120.0
+    static let cellHeight: CGFloat = 190.0
+    static let cellWidth: CGFloat = 400.0
     static let heartImageSize: CGFloat = 25.0
     static let buttonHeight: CGFloat = 40.0
     static let buttonWidth: CGFloat = 100.0
@@ -25,6 +26,10 @@ class CityCell: UICollectionViewCell {
             cityLabel.text = cityName
         }
     }
+    
+    // MARK: Constraints
+    
+    fileprivate var visitorLabelWidth: NSLayoutConstraint!
     
     // MARK: Init
     
@@ -43,7 +48,7 @@ class CityCell: UICollectionViewCell {
      fileprivate lazy var heartLabel: UILabel = {
         let label = UILabel()
         
-        label.font = UIFont.defaultFont(size: 13, fontStyle: .bold)
+        label.font = UIFont.defaultFont(size: 16, fontStyle: .bold)
         label.textColor = UIColor.white
         //likesLabel.text = "♥︎ \(selectedRow["likes"]!) likes"
         label.text = "♥︎"
@@ -68,18 +73,20 @@ class CityCell: UICollectionViewCell {
        
         label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
         label.textColor = UIColor.white
-        //label.text = "City".uppercased()
+        label.text = "Dublin".uppercased()
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
     }()
     
-     fileprivate lazy var vistorLabel: UILabel = {
+     fileprivate lazy var visitorLabel: UILabel = {
         let label = UILabel()
-       
-        label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
+        
+        label.textAlignment = .center
+        label.font = UIFont.defaultFont(size: 14, fontStyle: .regular)
         label.textColor = UIColor.white
         label.text = "1236 Visitors".uppercased()
+        label.backgroundColor = .sky()
         label.layer.cornerRadius = 4.0
         label.translatesAutoresizingMaskIntoConstraints = false
         
@@ -89,54 +96,57 @@ class CityCell: UICollectionViewCell {
     fileprivate func addSubviews() {
         backgroundColor = .clear
         
-        let view = UIView()
-        view.backgroundColor = .clear
-        backgroundView = view
-        
-        view.backgroundColor = .sunburst(alpha: 0.4)
-        selectedBackgroundView = view
+//        let bgImage = UIImageView()
+//        bgImage.image = Resources.dublinBgImage
+//        bgImage.contentMode = .scaleToFill
+//        
+//        contentView.backgroundView = bgImage
+//        
+        contentView.backgroundColor = .sky(alpha: 0.6)
         
         contentView.addSubview(heartLabel)
         contentView.addSubview(likesLabel)
         contentView.addSubview(cityLabel)
-        contentView.addSubview(vistorLabel)
+        contentView.addSubview(visitorLabel)
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.autoPinEdgesToSuperviewEdges()
         
         heartLabel.autoPinEdge(
             toSuperviewEdge: .top,
-            withInset: 2.0)
+            withInset: 10.0)
         heartLabel.autoPinEdge(
             toSuperviewEdge: .left,
-            withInset: 2.0)
+            withInset: 10.0)
         
         likesLabel.autoPinEdge(
             toSuperviewEdge: .top,
-            withInset: 2.0)
+            withInset: 10.0)
         likesLabel.autoPinEdge(
             .left,
             to: .right,
             of: heartLabel,
             withOffset: 5.0)
-//        heartLabel.autoSetDimension(
+//        likesLabel.autoSetDimension(
 //            .height,
 //            toSize: CityCell.cellWidth - 4.0)
-//        heartLabel.autoSetDimension(
+//        likesLabel.autoSetDimension(
 //            .width,
 //            toSize: CityCell.cellWidth - 4.0)
         
         cityLabel.autoAlignAxis(toSuperviewAxis: .horizontal)
         cityLabel.autoAlignAxis(toSuperviewAxis: .vertical)
         
-        vistorLabel.autoPinEdge(
+        visitorLabel.autoPinEdge(
             .top,
             to: .bottom,
             of: cityLabel,
             withOffset: 5.0)
-//        vistorLabel.autoSetDimension(
-//            .width,
-//            toSize: CityCell.cellWidth - 2.0)
+        visitorLabel.autoAlignAxis(toSuperviewAxis: .vertical)
+        visitorLabel.autoSetDimension(.height, toSize: visitorLabel.font.heightToFit())
+        visitorLabel.autoSetDimension(
+            .width,
+            toSize: 120.0)
     }
     
     

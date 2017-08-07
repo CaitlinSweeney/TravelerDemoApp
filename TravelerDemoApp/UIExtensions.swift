@@ -160,7 +160,7 @@ extension UIFont {
     }
     
     public func heightToFit() -> CGFloat {
-        return self.pointSize + 2.0
+        return self.pointSize + 5.0
     }
 }
 

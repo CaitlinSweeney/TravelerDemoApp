@@ -1,5 +1,5 @@
 //
-//  CityCollectionView.swift
+//  CItyCollectionView.swift
 //  TravelerDemoApp
 //
 //  Created by Caitlin Marie Sweeney on 8/2/17.

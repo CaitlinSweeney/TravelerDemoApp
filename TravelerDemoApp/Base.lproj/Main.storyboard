@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4hR-Ps-HP7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,67 +10,56 @@
     </dependencies>
     <scenes>
         <!--City View Controller-->
-        <scene sceneID="nEn-dF-z0p">
+        <scene sceneID="bhh-S4-xtf">
             <objects>
-                <viewController id="4RG-3y-X41" customClass="CityViewController" customModule="TravelerDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c5Y-0U-PPL" customClass="CityViewController" customModule="TravelerDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="e75-Ew-y1B"/>
-                        <viewControllerLayoutGuide type="bottom" id="9aE-p1-WT8"/>
+                        <viewControllerLayoutGuide type="top" id="oOY-s5-hnP"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zb3-P2-f91"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="a12-cc-x9x">
+                    <view key="view" contentMode="scaleToFill" id="Ju8-qs-53r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xzG-Db-eZk" customClass="CityCollectionView" customModule="TravelerDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="87" width="375" height="580"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h8c-IW-POL">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Tdb-fD-4ok">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwZ-q9-Inj" customClass="CityContentView" customModule="TravelerDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7jW-fb-aQf"/>
+                                    <constraint firstAttribute="height" constant="667" id="QQH-rS-Ou8"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zwZ-q9-Inj" firstAttribute="top" secondItem="Ju8-qs-53r" secondAttribute="top" id="7My-of-LoB"/>
+                            <constraint firstAttribute="trailing" secondItem="zwZ-q9-Inj" secondAttribute="trailing" id="8Ys-hS-zZG"/>
+                            <constraint firstItem="zwZ-q9-Inj" firstAttribute="leading" secondItem="Ju8-qs-53r" secondAttribute="leading" id="BvH-je-Fbu"/>
+                            <constraint firstItem="Zb3-P2-f91" firstAttribute="top" secondItem="zwZ-q9-Inj" secondAttribute="bottom" id="EAE-jk-2O1"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ukO-l5-ad0"/>
-                    <connections>
-                        <outlet property="cityView" destination="xzG-Db-eZk" id="Hki-ug-zyT"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="c8f-NY-8mr"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="b9g-QR-aOI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJR-gz-Xhe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2276" y="135.38230884557723"/>
+            <point key="canvasLocation" x="2981.5999999999999" y="134.48275862068968"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="LcW-or-XWx">
+        <scene sceneID="eeA-gM-pDi">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XEp-ar-bY2" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4hR-Ps-HP7" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nRu-fB-hiA">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cED-Bf-kH1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="4RG-3y-X41" kind="relationship" relationship="rootViewController" id="EKx-OV-bje"/>
+                        <segue destination="c5Y-0U-PPL" kind="relationship" relationship="rootViewController" id="mzz-qV-cAt"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UdB-mT-27b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wcw-eU-nYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1533.5999999999999" y="136.28185907046478"/>
+            <point key="canvasLocation" x="2256.8000000000002" y="135.38230884557723"/>
         </scene>
     </scenes>
 </document>

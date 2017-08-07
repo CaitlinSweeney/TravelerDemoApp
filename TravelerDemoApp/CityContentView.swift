@@ -14,11 +14,11 @@ class CityContentView: UIView {
     
     weak var cityCollectionDelegate: CityFlowDelegate? {
         didSet {
-            cityCollectionDelegate?.selectCity = cityCollectionDelegate as! SelectCity
+            cityCollectionDelegate?.selectCity = cityCollectionDelegate as? SelectCity
         }
     }
     
-    weak var navBarViewDelegate: navBarViewDelegate? {
+    weak var navBarViewDelegate: NavBarViewDelegate? {
         didSet {
             navBarView.delegate = navBarViewDelegate
         }
@@ -50,7 +50,7 @@ class CityContentView: UIView {
     
     fileprivate func addSubviews() {
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = .white()
+        backgroundColor = .white
         
         addSubview(navBarView)
         addSubview(cityCollectionView)

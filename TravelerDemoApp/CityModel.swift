@@ -14,38 +14,41 @@ class CityModel: NSObject {
     
     // MARK: Properties
     
-    var likes: Int = 0
-    var visitors: Int = 0
-    var cityName: String = ""
-    var cityDescription: String = ""
+//    var thumbnail : UIImage?
+//    var largeImage : UIImage?
+//    let cityName : String
+//    let likes : Int
+//    let server : String
+    
+    // MARK: Init
+    
+    convenience override init() {
+        self.init()
+    }
     
     let city = [
         [
             "cityName": "Dublin",
-            "image": "photo 01",
+            "bgImage": "photo 01",
             "likes": "3,241",
-            "cityDescription": "Retro occupy organic green, stumptown shabby chic pour-over roof party DIY normcore. Actually artisanoccupy",
             "visitors": "132412"
         ],
         [
             "cityName": "Dublin",
-            "image": "photo 01",
+            "bgImage": "photo 01",
             "likes": "3,241",
-            "cityDescription": "Retro occupy organic green, stumptown shabby chic pour-over roof party DIY normcore. Actually artisanoccupy",
             "visitors": "132412"
         ],
         [
             "cityName": "Dublin",
-            "image": "photo 01",
+            "bgImage": "photo 01",
             "likes": "3,241",
-            "cityDescription": "Retro occupy organic green, stumptown shabby chic pour-over roof party DIY normcore. Actually artisanoccupy",
             "visitors": "132412"
         ],
         [
             "cityName": "Dublin",
-            "image": "photo 01",
+            "bgImage": "photo 01",
             "likes": "3,241",
-            "cityDescription": "Retro occupy organic green, stumptown shabby chic pour-over roof party DIY normcore. Actually artisanoccupy",
             "visitors": "132412"
         ]
     ]

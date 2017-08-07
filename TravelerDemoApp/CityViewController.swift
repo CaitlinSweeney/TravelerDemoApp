@@ -11,29 +11,10 @@ import Foundation
 
 class CityViewController: UIViewController {
     
-//    @IBOutlet weak var navBarView: NavBarView! {
-//        didSet {
-//            navBarView.headerTitle = Resources.popularTitle
-//           // navBarView.searchBarDelegate = self
-//        }
-//    }
+    fileprivate var cityView = CityContentView()
     
-//    @IBOutlet weak var cityView: CityCollectionView!
-//  
-////    weak var cityView: CityCollectionView! {
-////        didSet {
-////            cityView.selectCity = self as? SelectCity
-////        }
-////    }
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        addCityView()
+        self.view.addSubview(cityView)
     }
-//    
-//    fileprivate func addCityView() {
-//        self.view.addSubview(cityView)
-//        cityView.selectCity = self as? SelectCity
-//        cityView.autoPinEdgesToSuperviewEdges()
-//    }
 }

@@ -21,8 +21,11 @@ class NavBarView: UIView {
     
     // MARK: Constants
     
+    static let viewHeight: CGFloat = 75.0
     static let padding: CGFloat = 10.0
-    let menuButtonWidth: CGFloat = 40.0
+    let menuButtonWidth: CGFloat = 38.0
+    let titleLabelWidth: CGFloat = 220.0
+    let titleLabelHeight: CGFloat = 30.0
     
     // MARK: Properties
     
@@ -79,7 +82,7 @@ class NavBarView: UIView {
         self.init(frame: CGRect.zero)
         
         headerTitle = title
-        titleLabel.text = headerTitle
+        titleLabel.text = headerTitle?.uppercased()
     }
     
     fileprivate override init(frame: CGRect) {
@@ -107,7 +110,7 @@ class NavBarView: UIView {
         
         viewHeight = autoSetDimension(
             .height,
-            toSize: 64.0)
+            toSize: NavBarView.viewHeight)
         
         layoutSubviews()
     }
@@ -117,8 +120,8 @@ class NavBarView: UIView {
             toSuperviewEdge: .top,
             withInset: NavBarView.padding * 3)
         titleLabel.autoAlignAxis(toSuperviewAxis: .vertical)
-        titleLabel.autoSetDimension(.height, toSize: 30)
-        titleLabel.autoSetDimension(.width, toSize: 220)
+        titleLabel.autoSetDimension(.height, toSize: titleLabelHeight)
+        titleLabel.autoSetDimension(.width, toSize: titleLabelWidth)
         
         menuButton.autoAlignAxis(
             .horizontal,
