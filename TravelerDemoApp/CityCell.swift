@@ -21,11 +21,13 @@ class CityCell: UICollectionViewCell {
     
     // MARK: Properties
     
-    var cityName: String? {
-        didSet {
-            cityLabel.text = cityName
-        }
-    }
+//    var city: CityModel? {
+//        didSet {
+//            guard let city = city else {
+//                
+//            }
+//        }
+//    }
     
     // MARK: Constraints
     
@@ -44,6 +46,17 @@ class CityCell: UICollectionViewCell {
     }
     
     // MARK: Views
+    
+    fileprivate lazy var bgImage: UIImageView = {
+        let imageView = UIImageView()
+        
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.backgroundColor = .clear
+        imageView.contentMode = .scaleAspectFill
+        imageView.image = Resources.dublinBgImage
+        
+        return imageView
+    }()
     
      fileprivate lazy var heartImage: UIImageView = {
         let imageView = UIImageView()
@@ -103,7 +116,8 @@ class CityCell: UICollectionViewCell {
 //        contentView.backgroundView = bgImage
 //        
         contentView.backgroundColor = .sky(alpha: 0.6)
-        
+    
+        contentView.addSubview(bgImage)
         contentView.addSubview(heartImage)
         contentView.addSubview(likesLabel)
         contentView.addSubview(cityLabel)
@@ -111,6 +125,8 @@ class CityCell: UICollectionViewCell {
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.autoPinEdgesToSuperviewEdges()
+        
+        bgImage.autoPinEdgesToSuperviewEdges()
         
         heartImage.autoPinEdge(
             toSuperviewEdge: .top,
@@ -143,5 +159,13 @@ class CityCell: UICollectionViewCell {
             toSize: 120.0)
     }
     
+    // MARK: Helpers
     
+//    fileprivate func setValues(from city: CityModel) {
+//       
+//        cityLabel.text= city.cityName
+//        likesLabel.text = city.likes
+//        visitorLabel.text = city.visitors
+//        //setBgImage(city.bgImage)
+//    }
 }

@@ -8,49 +8,49 @@
 
 import UIKit
 
-let cities = CityModel()
-
 class CityModel: NSObject {
+    
+//    let cities = CityModel()
     
     // MARK: Properties
    
-    struct cityInfo {
-        var cityName: String
-        var bgImage : String
-        var likes : Int
-        var visitors : Int
+    struct CityInfo {
+        var cityName: String?
+        var bgImage : String?
+        var likes: Int
+        var visitors: Int
     }
 
     // MARK: Init
-  
+    
 //    convenience override init() {
 //        self.init(
-//            cityName: "",
-//            bgImage: "",
-//            likes: 0,
-//            visitors: 0)
+//            self.cityName = String,
+//            self.bgImage = String,
+//            self.likes = Int,
+//            self.visitors = Int )
 //    }
     
-    let city: [cityInfo] = [
-        cityInfo(
+    let city: [CityInfo] = [
+        CityInfo(
                 cityName: "Dublin",
                 bgImage: "DublinBgImage",
                 likes: 9241,
                 visitors: 1212
         ),
-        cityInfo(
+        CityInfo(
                 cityName: "New Zealand",
                 bgImage: "MilfordSoundBgImage",
                 likes: 8241,
                 visitors: 24012
         ),
-        cityInfo(
+        CityInfo(
                 cityName: "San Diego",
                 bgImage: "SanDiegoBgImage",
                 likes: 3241,
                 visitors: 11412
         ),
-        cityInfo(
+        CityInfo(
             cityName: "Crested Butte",
             bgImage: "CrestedButteBgImage",
             likes: 6241,
