@@ -164,3 +164,39 @@ extension UIFont {
     }
 }
 
+extension UILabel {
+   
+    // MARK: Listener & Like Count
+    
+    func setLikesCount(_ count: Int) {
+        var text: String
+        
+        if count >= 1_000_000 {
+            text = "\(count / 1_000_000).\((count % 1_000_000) / 100_000)M"
+        } else if count >= 1_000 {
+            text = "\(count / 1_000).\((count % 1_000) / 100)K"
+        } else {
+            text = "\(count)"
+        }
+        
+        self.text = text
+    }
+    
+    func setListenerCount(_ count: Int) {
+        var text: String
+        
+        if count >= 1_000_000 {
+            text = "\(count / 1_000_000).\((count % 1_000_000) / 100_000)M"
+        } else if count >= 1_000 {
+            text = "\(count / 1_000).\((count % 1_000) / 100)K"
+        } else {
+            text = "\(count)"
+        }
+        
+        if count == 1 {
+            self.text = "\(text) \(Resources.listenersTitle)"
+        } else {
+            self.text = "\(text) \(Resources.listenersTitle)"
+        }
+    }
+}

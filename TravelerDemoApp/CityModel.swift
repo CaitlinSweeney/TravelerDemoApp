@@ -7,54 +7,67 @@
 //
 
 import UIKit
+import Foundation
 
 class CityModel: NSObject {
     
-//    let cities = CityModel()
-    
     // MARK: Properties
-   
-    struct CityInfo {
-        var cityName: String?
-        var bgImage : String?
-        var likes: Int
-        var visitors: Int
-    }
+
+        let cityName: String
+        let bgImage: UIImage
+        let likes: Int
+        let visitors: Int
 
     // MARK: Init
     
-//    convenience override init() {
-//        self.init(
-//            self.cityName = String,
-//            self.bgImage = String,
-//            self.likes = Int,
-//            self.visitors = Int )
-//    }
+    convenience override init() {
+        self.init(cityName: "", bgImage: UIImage(), likes: 0, visitors: 0)
+    }
     
-    let city: [CityInfo] = [
-        CityInfo(
+    init(
+        cityName: String,
+        bgImage: UIImage,
+        likes: Int,
+        visitors: Int) {
+        
+            self.cityName = cityName
+            self.bgImage = bgImage
+            self.likes = likes
+            self.visitors = visitors
+    }
+}
+
+class CurrentCity {
+    var cities = [CityModel]()
+    
+    func updateCityInfo() {
+        let cities = [
+            CityModel(
                 cityName: "Dublin",
-                bgImage: "DublinBgImage",
+                bgImage: Resources.dublinBgImage,
                 likes: 9241,
                 visitors: 1212
-        ),
-        CityInfo(
+            ),
+            CityModel(
                 cityName: "New Zealand",
-                bgImage: "MilfordSoundBgImage",
+                bgImage: Resources.milfordSoundBgImage,
                 likes: 8241,
                 visitors: 24012
-        ),
-        CityInfo(
+            ),
+            CityModel(
                 cityName: "San Diego",
-                bgImage: "SanDiegoBgImage",
+                bgImage: Resources.sanDiegoBgImage,
                 likes: 3241,
                 visitors: 11412
-        ),
-        CityInfo(
-            cityName: "Crested Butte",
-            bgImage: "CrestedButteBgImage",
-            likes: 6241,
-            visitors: 14126
-        )
-    ]
+            ),
+            CityModel(
+                cityName: "Crested Butte",
+                bgImage: Resources.crestedButteBgImage,
+                likes: 6241,
+                visitors: 14126
+            )
+        
+        ]
+        self.cities = cities
+    }
 }

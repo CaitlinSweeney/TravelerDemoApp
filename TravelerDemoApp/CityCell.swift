@@ -21,13 +21,15 @@ class CityCell: UICollectionViewCell {
     
     // MARK: Properties
     
-//    var city: CityModel? {
-//        didSet {
-//            guard let city = city else {
-//                
-//            }
-//        }
-//    }
+    var city: CityModel? {
+        didSet {
+            guard let city = city else {
+                return
+            }
+            
+            setValues(from: city)
+        }
+    }
     
     // MARK: Constraints
     
@@ -53,7 +55,7 @@ class CityCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFill
-        imageView.image = Resources.dublinBgImage
+//        imageView.image = Resources.dublinBgImage
         
         return imageView
     }()
@@ -73,7 +75,6 @@ class CityCell: UICollectionViewCell {
        
         label.font = UIFont.defaultFont(size: 12, fontStyle: .bold)
         label.textColor = UIColor.white
-        label.text = "124k"
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -84,7 +85,6 @@ class CityCell: UICollectionViewCell {
        
         label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
         label.textColor = UIColor.white
-        label.text = "Dublin".uppercased()
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -96,7 +96,6 @@ class CityCell: UICollectionViewCell {
         label.textAlignment = .center
         label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
         label.textColor = UIColor.white
-        label.text = "1236 Visitors".uppercased()
         label.backgroundColor = .sky()
         label.layer.cornerRadius = 10.0
         label.clipsToBounds = true
@@ -161,11 +160,10 @@ class CityCell: UICollectionViewCell {
     
     // MARK: Helpers
     
-//    fileprivate func setValues(from city: CityModel) {
-//       
-//        cityLabel.text= city.cityName
-//        likesLabel.text = city.likes
-//        visitorLabel.text = city.visitors
-//        //setBgImage(city.bgImage)
-//    }
+    fileprivate func setValues(from city: CityModel) {
+        cityLabel.text = city.cityName
+        likesLabel.setLikesCount(city.likes)
+        visitorLabel.setListenerCount(city.visitors)
+        bgImage.image = city.bgImage
+    }
 }

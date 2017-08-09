@@ -94,17 +94,21 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
     
     convenience init(cities: [CityModel]) {
         self.init()
+        
+        self.cities = cities
     }
     
     func numberOfSections(
         in collectionView: UICollectionView) -> Int {
+        
         return 1
     }
     
     func collectionView(
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int) -> Int {
-        return 1
+        
+        return cities.count
     }
     
     func collectionView(
@@ -124,6 +128,8 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
             
             cell = CityCell()
         }
+            cell.city = cities[indexPath.row]
+        
         return cell
     }
 
