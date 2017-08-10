@@ -37,37 +37,28 @@ class CityModel: NSObject {
     }
 }
 
-class CurrentCity {
-    var cities = [CityModel]()
+class CityInfo: CityModel {
     
-    func updateCityInfo() {
-        let cities = [
+    let cities = [
             CityModel(
                 cityName: "Dublin",
                 bgImage: Resources.dublinBgImage,
                 likes: 9241,
-                visitors: 1212
-            ),
+                visitors: 1212),
             CityModel(
                 cityName: "New Zealand",
                 bgImage: Resources.milfordSoundBgImage,
                 likes: 8241,
-                visitors: 24012
-            ),
+                visitors: 24012),
             CityModel(
                 cityName: "San Diego",
                 bgImage: Resources.sanDiegoBgImage,
                 likes: 3241,
-                visitors: 11412
-            ),
+                visitors: 11412),
             CityModel(
                 cityName: "Crested Butte",
                 bgImage: Resources.crestedButteBgImage,
                 likes: 6241,
-                visitors: 14126
-            )
-        
+                visitors: 14126)
         ]
-        self.cities = cities
-    }
 }

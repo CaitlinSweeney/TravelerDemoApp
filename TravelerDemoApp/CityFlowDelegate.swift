@@ -9,7 +9,7 @@
 import UIKit
 
 protocol SelectCity: class {
-    func didSelectCity(_ city: CityModel)
+    func didSelectCity(_ city: CityInfo)
 }
 
 class CityFlowDelegate: UICollectionViewFlowLayout, UICollectionViewDelegateFlowLayout {
@@ -34,7 +34,7 @@ class CityFlowDelegate: UICollectionViewFlowLayout, UICollectionViewDelegateFlow
         }
         
         selectCity?.didSelectCity(
-            dataSource.cities[indexPath.row])
+            dataSource.cities[indexPath.row] as! CityInfo)
     }
     
     func collectionView(

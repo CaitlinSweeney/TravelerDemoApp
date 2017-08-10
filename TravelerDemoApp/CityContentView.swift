@@ -34,6 +34,7 @@ class CityContentView: UIView {
     fileprivate lazy var cityCollectionView: CityCollectionView = {
         return CityCollectionView()
     }()
+    
     // MARK: Init
     
     override init(frame: CGRect) {
@@ -68,9 +69,8 @@ class CityContentView: UIView {
         cityCollectionView.autoPinEdge(toSuperviewEdge: .left)
         cityCollectionView.autoAlignAxis(toSuperviewAxis: .vertical)
         
-        //cityCollectionView.reloadData()
+        cityCollectionView.reloadData()
         
         layoutSubviews()
     }
-
 }

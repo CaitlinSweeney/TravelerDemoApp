@@ -14,10 +14,10 @@ class CityCell: UICollectionViewCell {
     
     static let cellID = "CityCell"
     static let cellHeight: CGFloat = 190.0
-    static let cellWidth: CGFloat = 400.0
-    static let heartImageSize: CGFloat = 18.0
-    static let buttonHeight: CGFloat = 40.0
-    static let buttonWidth: CGFloat = 100.0
+    
+    let heartImageSize: CGFloat = 18.0
+    let buttonHeight: CGFloat = 40.0
+    let buttonWidth: CGFloat = 100.0
     
     // MARK: Properties
     
@@ -26,10 +26,11 @@ class CityCell: UICollectionViewCell {
             guard let city = city else {
                 return
             }
-            
             setValues(from: city)
         }
     }
+    
+    //var singleCity = city.cities
     
     // MARK: Constraints
     
@@ -41,10 +42,14 @@ class CityCell: UICollectionViewCell {
         super.init(frame: frame)
         
         addSubviews()
+     //   setValues(from: city?)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        
+        addSubviews()
+      //  setValues(from: city?)
     }
     
     // MARK: Views
@@ -55,7 +60,6 @@ class CityCell: UICollectionViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .clear
         imageView.contentMode = .scaleAspectFill
-//        imageView.image = Resources.dublinBgImage
         
         return imageView
     }()
@@ -65,7 +69,7 @@ class CityCell: UICollectionViewCell {
         
         imageView.layer.masksToBounds = true
         imageView.image = Resources.heartImage
-        imageView.tintColor = .white
+        imageView.tintColor = .black
         
         return imageView
     }()
@@ -74,7 +78,7 @@ class CityCell: UICollectionViewCell {
         let label = UILabel()
        
         label.font = UIFont.defaultFont(size: 12, fontStyle: .bold)
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -84,7 +88,7 @@ class CityCell: UICollectionViewCell {
         let label = UILabel()
        
         label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -95,7 +99,7 @@ class CityCell: UICollectionViewCell {
         
         label.textAlignment = .center
         label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
-        label.textColor = UIColor.white
+        label.textColor = UIColor.black
         label.backgroundColor = .sky()
         label.layer.cornerRadius = 10.0
         label.clipsToBounds = true
@@ -113,9 +117,7 @@ class CityCell: UICollectionViewCell {
 //        bgImage.contentMode = .scaleToFill
 //        
 //        contentView.backgroundView = bgImage
-//        
-        contentView.backgroundColor = .sky(alpha: 0.6)
-    
+//            
         contentView.addSubview(bgImage)
         contentView.addSubview(heartImage)
         contentView.addSubview(likesLabel)
@@ -133,14 +135,13 @@ class CityCell: UICollectionViewCell {
         heartImage.autoPinEdge(
             toSuperviewEdge: .left,
             withInset: 15.0)
-        heartImage.autoSetDimension(.height, toSize: CityCell.heartImageSize)
-        heartImage.autoSetDimension(.width, toSize: CityCell.heartImageSize)
+        heartImage.autoSetDimension(.height, toSize: heartImageSize)
+        heartImage.autoSetDimension(.width, toSize: heartImageSize)
         
         likesLabel.autoPinEdge(
             toSuperviewEdge: .top,
             withInset: 10.0)
-        likesLabel.autoPinEdge(toSuperviewEdge: .left, withInset: CityCell.heartImageSize + 22.0)
-//        likesLabel.autoAlignAxis(.horizontal, toSameAxisOf: heartLabel, withOffset: -12.0)
+        likesLabel.autoPinEdge(toSuperviewEdge: .left, withInset: heartImageSize + 22.0)
         likesLabel.autoSetDimension(.height, toSize: likesLabel.font.heightToFit())
         
         cityLabel.autoAlignAxis(toSuperviewAxis: .horizontal)
@@ -160,7 +161,7 @@ class CityCell: UICollectionViewCell {
     
     // MARK: Helpers
     
-    fileprivate func setValues(from city: CityModel) {
+     func setValues(from city: CityModel) {
         cityLabel.text = city.cityName
         likesLabel.setLikesCount(city.likes)
         visitorLabel.setListenerCount(city.visitors)

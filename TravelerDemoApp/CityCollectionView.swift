@@ -88,11 +88,11 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
     
     // MARK: Properties
     
-    var cities = [CityModel]()
+    var cities = CityInfo().cities
     
     // MARK: Init
     
-    convenience init(cities: [CityModel]) {
+    convenience init(cities: [CityInfo]) {
         self.init()
         
         self.cities = cities
@@ -129,6 +129,8 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
             cell = CityCell()
         }
             cell.city = cities[indexPath.row]
+        
+         //   cell.city = ([cities[indexPath.row]])
         
         return cell
     }
