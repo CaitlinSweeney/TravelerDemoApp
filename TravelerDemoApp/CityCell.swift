@@ -19,7 +19,20 @@ class CityCell: UICollectionViewCell {
     let buttonHeight: CGFloat = 40.0
     let buttonWidth: CGFloat = 100.0
     
+    enum State {
+        case one
+        case two
+        case three
+        case four
+    }
+    
     // MARK: Properties
+    
+//    var colorState: State = .one {
+//        didSet {
+//            switchState()
+//        }
+//    }
     
     var city: CityModel? {
         didSet {
@@ -29,8 +42,6 @@ class CityCell: UICollectionViewCell {
             setValues(from: city)
         }
     }
-    
-    //var singleCity = city.cities
     
     // MARK: Constraints
     
@@ -42,14 +53,12 @@ class CityCell: UICollectionViewCell {
         super.init(frame: frame)
         
         addSubviews()
-     //   setValues(from: city?)
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         addSubviews()
-      //  setValues(from: city?)
     }
     
     // MARK: Views
@@ -64,12 +73,20 @@ class CityCell: UICollectionViewCell {
         return imageView
     }()
     
+    fileprivate lazy var colorOverlayImage: UIView = {
+        let view = UIView()
+        
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        return view
+    }()
+    
      fileprivate lazy var heartImage: UIImageView = {
         let imageView = UIImageView()
         
         imageView.layer.masksToBounds = true
         imageView.image = Resources.heartImage
-        imageView.tintColor = .black
+        imageView.tintColor = .white
         
         return imageView
     }()
@@ -78,7 +95,7 @@ class CityCell: UICollectionViewCell {
         let label = UILabel()
        
         label.font = UIFont.defaultFont(size: 12, fontStyle: .bold)
-        label.textColor = UIColor.black
+        label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -88,7 +105,7 @@ class CityCell: UICollectionViewCell {
         let label = UILabel()
        
         label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
-        label.textColor = UIColor.black
+        label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
        
         return label
@@ -99,7 +116,7 @@ class CityCell: UICollectionViewCell {
         
         label.textAlignment = .center
         label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
-        label.textColor = UIColor.black
+        label.textColor = UIColor.white
         label.backgroundColor = .sky()
         label.layer.cornerRadius = 10.0
         label.clipsToBounds = true
@@ -111,14 +128,9 @@ class CityCell: UICollectionViewCell {
 
     fileprivate func addSubviews() {
         backgroundColor = .clear
-        
-//        let bgImage = UIImageView()
-//        bgImage.image = Resources.dublinBgImage
-//        bgImage.contentMode = .scaleToFill
-//        
-//        contentView.backgroundView = bgImage
-//            
+
         contentView.addSubview(bgImage)
+        contentView.addSubview(colorOverlayImage)
         contentView.addSubview(heartImage)
         contentView.addSubview(likesLabel)
         contentView.addSubview(cityLabel)
@@ -128,6 +140,12 @@ class CityCell: UICollectionViewCell {
         contentView.autoPinEdgesToSuperviewEdges()
         
         bgImage.autoPinEdgesToSuperviewEdges()
+        
+        colorOverlayImage.autoCenterInSuperview()
+        colorOverlayImage.autoPinEdgesToSuperviewEdges()
+        
+//        colorOverlayImage.autoAlignAxis(toSuperviewAxis: .horizontal)
+//        colorOverlayImage.autoAlignAxis(toSuperviewAxis: .vertical)
         
         heartImage.autoPinEdge(
             toSuperviewEdge: .top,
@@ -167,4 +185,29 @@ class CityCell: UICollectionViewCell {
         visitorLabel.setListenerCount(city.visitors)
         bgImage.image = city.bgImage
     }
+    
+    func rowOneColor() {
+        return colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
+    }
+    
+    func rowTwoColor() {
+        return colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
+    }
+    
+    func rowThreeColor() {
+        return colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
+    }
+    
+    func rowFourColor() {
+        return colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
+    }
+    
+//    func switchState() {
+//        switch colorState {
+//            case .one: colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
+//            case .two: colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
+//            case .three: colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
+//            case .four: colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
+//        }
+//    }
 }

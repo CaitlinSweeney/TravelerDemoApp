@@ -130,9 +130,20 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
         }
             cell.city = cities[indexPath.row]
         
-         //   cell.city = ([cities[indexPath.row]])
+        cell = CityCell()
+
+        if indexPath.row == 1 {
+            cell.rowOneColor()
+        } else if indexPath.row == 2 {
+            cell.rowTwoColor()
+        } else if indexPath.row == 3 {
+            cell.rowThreeColor()
+        } else if indexPath.row == 4 {
+            cell.rowFourColor()
+        } else {
+            cell.rowOneColor()
+        }
         
         return cell
     }
-
 }
