@@ -117,7 +117,6 @@ class CityCell: UICollectionViewCell {
         label.textAlignment = .center
         label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
         label.textColor = UIColor.white
-        label.backgroundColor = .sky()
         label.layer.cornerRadius = 10.0
         label.clipsToBounds = true
         label.layer.masksToBounds = true
@@ -143,9 +142,6 @@ class CityCell: UICollectionViewCell {
         
         colorOverlayImage.autoCenterInSuperview()
         colorOverlayImage.autoPinEdgesToSuperviewEdges()
-        
-//        colorOverlayImage.autoAlignAxis(toSuperviewAxis: .horizontal)
-//        colorOverlayImage.autoAlignAxis(toSuperviewAxis: .vertical)
         
         heartImage.autoPinEdge(
             toSuperviewEdge: .top,
@@ -182,24 +178,36 @@ class CityCell: UICollectionViewCell {
      func setValues(from city: CityModel) {
         cityLabel.text = city.cityName
         likesLabel.setLikesCount(city.likes)
-        visitorLabel.setListenerCount(city.visitors)
+        visitorLabel.setVisitorCount(city.visitors)
         bgImage.image = city.bgImage
     }
     
-    func rowOneColor() {
-        return colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
+    func rowOneColor() -> () {
+        colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
+        visitorLabel.backgroundColor = .mustard(alpha: 0.8)
+        
+        return()
     }
     
-    func rowTwoColor() {
-        return colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
+    func rowTwoColor() -> () {
+        colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
+        visitorLabel.backgroundColor = .clementine(alpha: 0.8)
+        
+        return()
     }
     
     func rowThreeColor() {
-        return colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
+        colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
+        visitorLabel.backgroundColor = .ocean(alpha: 0.8)
+        
+        return()        
     }
     
     func rowFourColor() {
-        return colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
+        colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
+        visitorLabel.backgroundColor = .sky(alpha: 0.8)
+        
+        return()
     }
     
 //    func switchState() {

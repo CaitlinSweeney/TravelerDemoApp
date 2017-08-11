@@ -17,7 +17,7 @@ struct Resources {
     static let moreSign = "\u{2630}"
     
     static let popularTitle = "Popular Destinations"
-    static let listenersTitle = "Listeners"
+    static let visitorsTitle = "Visitors"
     
     // MARK: Icons
     

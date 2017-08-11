@@ -41,7 +41,6 @@ class CityCollectionView: UICollectionView {
     fileprivate lazy var cityDataSourceObject: CityDataSource = {
         return CityDataSource()
     }()
-
    
     // MARK: Init
     
@@ -127,16 +126,17 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
                 forCellWithReuseIdentifier: CityCell.cellID)
             
             cell = CityCell()
-
         }
         
-        if indexPath.row == 1 {
+        //  MARK: Cell Color
+        
+        if indexPath.row == 0 {
             cell.rowOneColor()
-        } else if indexPath.row == 2 {
+        } else if indexPath.row == 1 {
             cell.rowTwoColor()
-        } else if indexPath.row == 3 {
+        } else if indexPath.row == 2 {
             cell.rowThreeColor()
-        } else if indexPath.row == 4 {
+        } else if indexPath.row == 3 {
             cell.rowFourColor()
         } else {
             cell.rowOneColor()

@@ -166,16 +166,13 @@
 		E95D7CAA1F3183270031700A /* TravelerDemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				E95D7CDE1F3188810031700A /* UIExtensions.swift */,
-				E95D7CAB1F3183270031700A /* AppDelegate.swift */,
 				E9194F021F32832A000321CC /* CityViewController.swift */,
-				E91AFEF51F33CC2100C58924 /* Views */,
-				E9194EFC1F3246ED000321CC /* Resources.swift */,
-				E9194EFE1F326957000321CC /* CityModel.swift */,
-				E95D7CB51F3183270031700A /* Assets.xcassets */,
-				E95D7CB71F3183270031700A /* LaunchScreen.storyboard */,
-				E95D7CAF1F3183270031700A /* Main.storyboard */,
 				E91AFEF31F33BF5800C58924 /* CityFlowDelegate.swift */,
+				E91AFEF51F33CC2100C58924 /* Views */,
+				E9194EFE1F326957000321CC /* CityModel.swift */,
+				E95D7CDE1F3188810031700A /* UIExtensions.swift */,
+				E9AB911D1F3E27AB006C2233 /* Resources */,
+				E95D7CAB1F3183270031700A /* AppDelegate.swift */,
 				E95D7CBA1F3183270031700A /* Info.plist */,
 				E95D7CB21F3183270031700A /* TravelerDemoApp.xcdatamodeld */,
 			);
@@ -198,6 +195,17 @@
 				E95D7CD01F3183270031700A /* Info.plist */,
 			);
 			path = TravelerDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		E9AB911D1F3E27AB006C2233 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E95D7CB51F3183270031700A /* Assets.xcassets */,
+				E95D7CAF1F3183270031700A /* Main.storyboard */,
+				E95D7CB71F3183270031700A /* LaunchScreen.storyboard */,
+				E9194EFC1F3246ED000321CC /* Resources.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

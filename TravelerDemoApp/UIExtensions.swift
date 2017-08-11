@@ -166,7 +166,7 @@ extension UIFont {
 
 extension UILabel {
    
-    // MARK: Listener & Like Count
+    // MARK: Visitor & Like Count
     
     func setLikesCount(_ count: Int) {
         var text: String
@@ -182,7 +182,7 @@ extension UILabel {
         self.text = text
     }
     
-    func setListenerCount(_ count: Int) {
+    func setVisitorCount(_ count: Int) {
         var text: String
         
         if count >= 1_000_000 {
@@ -194,9 +194,9 @@ extension UILabel {
         }
         
         if count == 1 {
-            self.text = "\(text) \(Resources.listenersTitle)"
+            self.text = "\(text) \(Resources.visitorsTitle)"
         } else {
-            self.text = "\(text) \(Resources.listenersTitle)"
+            self.text = "\(text) \(Resources.visitorsTitle)"
         }
     }
 }

@@ -53,6 +53,7 @@ class CityFlowDelegate: UICollectionViewFlowLayout, UICollectionViewDelegateFlow
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         insetForSectionAt section: Int) -> UIEdgeInsets {
+       
         return UIEdgeInsets()
     }
     
@@ -60,6 +61,7 @@ class CityFlowDelegate: UICollectionViewFlowLayout, UICollectionViewDelegateFlow
         _ collectionView: UICollectionView,
         layout collectionViewLayout: UICollectionViewLayout,
         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+       
         return 0
     }
 }
