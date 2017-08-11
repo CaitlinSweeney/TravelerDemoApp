@@ -127,11 +127,9 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
                 forCellWithReuseIdentifier: CityCell.cellID)
             
             cell = CityCell()
-        }
-            cell.city = cities[indexPath.row]
-        
-        cell = CityCell()
 
+        }
+        
         if indexPath.row == 1 {
             cell.rowOneColor()
         } else if indexPath.row == 2 {
@@ -143,6 +141,8 @@ class CityDataSource: NSObject, UICollectionViewDataSource {
         } else {
             cell.rowOneColor()
         }
+        
+        cell.city = cities[indexPath.row]
         
         return cell
     }
