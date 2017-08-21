@@ -13,32 +13,27 @@ class CityCell: UICollectionViewCell {
     // MARK: Constants
     
     static let cellID = "CityCell"
-    static let cellHeight: CGFloat = 190.0
+    static let cellHeight: CGFloat = 175.0
     
     let heartImageSize: CGFloat = 18.0
     let buttonHeight: CGFloat = 40.0
     let buttonWidth: CGFloat = 100.0
-    
-    enum State {
-        case one
-        case two
-        case three
-        case four
-    }
-    
-    // MARK: Properties
-    
-//    var colorState: State = .one {
-//        didSet {
-//            switchState()
-//        }
-//    }
     
     var city: CityModel? {
         didSet {
             guard let city = city else {
                 return
             }
+            
+            visitorLabel.setVisitorCount(city.visitors)
+            
+            if let text = visitorLabel.text {
+                visitorLabelWidth.constant = visitorLabel.width(
+                    toFit: text,
+                    font: visitorLabel.font,
+                    padding: 25.0)
+            }
+            
             setValues(from: city)
         }
     }
@@ -104,7 +99,7 @@ class CityCell: UICollectionViewCell {
      fileprivate lazy var cityLabel: UILabel = {
         let label = UILabel()
        
-        label.font = UIFont.defaultFont(size: 20, fontStyle: .bold)
+        label.font = UIFont.defaultFont(size: 22, fontStyle: .bold)
         label.textColor = UIColor.white
         label.translatesAutoresizingMaskIntoConstraints = false
        
@@ -117,7 +112,7 @@ class CityCell: UICollectionViewCell {
         label.textAlignment = .center
         label.font = UIFont.defaultFont(size: 12, fontStyle: .regular)
         label.textColor = UIColor.white
-        label.layer.cornerRadius = 10.0
+        label.layer.cornerRadius = 12.0
         label.clipsToBounds = true
         label.layer.masksToBounds = true
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -168,54 +163,44 @@ class CityCell: UICollectionViewCell {
             withOffset: 5.0)
         visitorLabel.autoAlignAxis(toSuperviewAxis: .vertical)
         visitorLabel.autoSetDimension(.height, toSize: visitorLabel.font.heightToFit())
-        visitorLabel.autoSetDimension(
+        visitorLabelWidth = visitorLabel.autoSetDimension(
             .width,
-            toSize: 120.0)
+            toSize: 0)
     }
     
     // MARK: Helpers
     
      func setValues(from city: CityModel) {
-        cityLabel.text = city.cityName
+        cityLabel.text = city.cityName.uppercased()
         likesLabel.setLikesCount(city.likes)
-        visitorLabel.setVisitorCount(city.visitors)
         bgImage.image = city.bgImage
     }
     
-    func rowOneColor() -> () {
-        colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
-        visitorLabel.backgroundColor = .mustard(alpha: 0.8)
+    func rowOneColor() {
+        colorOverlayImage.backgroundColor = .mustard(alpha: 0.6)
+        visitorLabel.backgroundColor = .mustard()
         
         return()
     }
     
-    func rowTwoColor() -> () {
-        colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
-        visitorLabel.backgroundColor = .clementine(alpha: 0.8)
+    func rowTwoColor() {
+        colorOverlayImage.backgroundColor = .clementine(alpha: 0.6)
+        visitorLabel.backgroundColor = .clementine()
         
         return()
     }
     
     func rowThreeColor() {
-        colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
-        visitorLabel.backgroundColor = .ocean(alpha: 0.8)
+        colorOverlayImage.backgroundColor = .ocean(alpha: 0.6)
+        visitorLabel.backgroundColor = .ocean()
         
         return()        
     }
     
     func rowFourColor() {
-        colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
-        visitorLabel.backgroundColor = .sky(alpha: 0.8)
+        colorOverlayImage.backgroundColor = .sky(alpha: 0.6)
+        visitorLabel.backgroundColor = .sky()
         
         return()
     }
-    
-//    func switchState() {
-//        switch colorState {
-//            case .one: colorOverlayImage.backgroundColor = .mustard(alpha: 0.4)
-//            case .two: colorOverlayImage.backgroundColor = .clementine(alpha: 0.4)
-//            case .three: colorOverlayImage.backgroundColor = .ocean(alpha: 0.4)
-//            case .four: colorOverlayImage.backgroundColor = .sky(alpha: 0.4)
-//        }
-//    }
 }

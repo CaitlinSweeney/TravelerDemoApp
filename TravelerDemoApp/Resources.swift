@@ -27,6 +27,9 @@ struct Resources {
     fileprivate static let heartIcon = "HeartIcon"
     static let heartImage = UIImage(named: Resources.heartIcon)!.withRenderingMode(.alwaysTemplate)
     
+    fileprivate static let refreshIcon = "RefreshIcon"
+    static let refreshImage = UIImage(named: Resources.refreshIcon)!.withRenderingMode(.alwaysTemplate)
+    
     // MARK: Images
     
     fileprivate static let dublinBgImageView = "DublinBgImage"

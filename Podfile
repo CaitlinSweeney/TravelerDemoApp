@@ -5,6 +5,7 @@ target 'TravelerDemoApp' do
 
 	pod 'PureLayout', '~> 3.0'
     pod 'SwiftLint', '~> 0.15'
+    pod 'PullToRefresher', '~> 2.0'
 
   target 'TravelerDemoAppTests' do
     inherit! :search_paths

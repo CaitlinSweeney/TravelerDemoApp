@@ -1,15 +1,18 @@
 PODS:
+  - PullToRefresher (2.0.2)
   - PureLayout (3.0.2)
   - SwiftLint (0.21.0)
 
 DEPENDENCIES:
+  - PullToRefresher (~> 2.0)
   - PureLayout (~> 3.0)
   - SwiftLint (~> 0.15)
 
 SPEC CHECKSUMS:
+  PullToRefresher: 5e101a8c3523e67ee0291375ba932ef59e0853c2
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SwiftLint: 6de8b2d15f43c482bdec2953b8cfd696faa876e8
 
-PODFILE CHECKSUM: 68f7fa8ee3cce6f4f76a58da9549dba14e9e71a6
+PODFILE CHECKSUM: 8bbb331a109d873b59f4670c51d7b66cfb0979d0
 
 COCOAPODS: 1.2.1

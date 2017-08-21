@@ -165,6 +165,25 @@ extension UIFont {
 }
 
 extension UILabel {
+    
+    // MARK: Width
+    
+    func width(toFit text: String?, font: UIFont) -> CGFloat {
+        guard let text = text else {
+            return 0.0
+        }
+        
+        return (text as NSString).size(
+            attributes: [NSFontAttributeName: font]).width
+    }
+    
+    func width(
+        toFit text: String?,
+        font: UIFont,
+        padding: CGFloat) -> CGFloat {
+        
+        return width(toFit: text, font: font) + padding
+    }
    
     // MARK: Visitor & Like Count
     

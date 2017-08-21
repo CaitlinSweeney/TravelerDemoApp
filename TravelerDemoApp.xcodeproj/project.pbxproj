@@ -26,6 +26,8 @@
 		E95D7CDD1F3184020031700A /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D7CDC1F3184020031700A /* NavBarView.swift */; };
 		E95D7CDF1F3188810031700A /* UIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D7CDE1F3188810031700A /* UIExtensions.swift */; };
 		E95D7CE31F318AC40031700A /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D7CE21F318AC40031700A /* CityCell.swift */; };
+		E9AB915C1F4B65E3006C2233 /* RefreshIconView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9AB915B1F4B65E3006C2233 /* RefreshIconView.xib */; };
+		E9AB915E1F4B66C1006C2233 /* RefreshCities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AB915D1F4B66C1006C2233 /* RefreshCities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		E95D7CDC1F3184020031700A /* NavBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		E95D7CDE1F3188810031700A /* UIExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtensions.swift; sourceTree = "<group>"; };
 		E95D7CE21F318AC40031700A /* CityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		E9AB915B1F4B65E3006C2233 /* RefreshIconView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshIconView.xib; sourceTree = "<group>"; };
+		E9AB915D1F4B66C1006C2233 /* RefreshCities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshCities.swift; sourceTree = "<group>"; };
 		FC39E2AE17FCA62A9718D6E9 /* Pods_TravelerDemoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelerDemoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,7 @@
 				E9194F041F3288A4000321CC /* CityCollectionView.swift */,
 				E95D7CE21F318AC40031700A /* CityCell.swift */,
 				E91AFEF61F351F8100C58924 /* CityContentView.swift */,
+				E9AB915D1F4B66C1006C2233 /* RefreshCities.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -203,6 +208,7 @@
 				E95D7CB51F3183270031700A /* Assets.xcassets */,
 				E95D7CAF1F3183270031700A /* Main.storyboard */,
 				E95D7CB71F3183270031700A /* LaunchScreen.storyboard */,
+				E9AB915B1F4B65E3006C2233 /* RefreshIconView.xib */,
 				E9194EFC1F3246ED000321CC /* Resources.swift */,
 			);
 			name = Resources;
@@ -329,6 +335,7 @@
 			files = (
 				E95D7CB91F3183270031700A /* LaunchScreen.storyboard in Resources */,
 				E95D7CB61F3183270031700A /* Assets.xcassets in Resources */,
+				E9AB915C1F4B65E3006C2233 /* RefreshIconView.xib in Resources */,
 				E95D7CB11F3183270031700A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +505,7 @@
 				E95D7CB41F3183270031700A /* TravelerDemoApp.xcdatamodeld in Sources */,
 				E9194EFF1F326957000321CC /* CityModel.swift in Sources */,
 				E9194F051F3288A4000321CC /* CityCollectionView.swift in Sources */,
+				E9AB915E1F4B66C1006C2233 /* RefreshCities.swift in Sources */,
 				E91AFEF41F33BF5800C58924 /* CityFlowDelegate.swift in Sources */,
 				E95D7CDF1F3188810031700A /* UIExtensions.swift in Sources */,
 				E91AFEF71F351F8100C58924 /* CityContentView.swift in Sources */,
