@@ -16,6 +16,7 @@
 		E9194F051F3288A4000321CC /* CityCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9194F041F3288A4000321CC /* CityCollectionView.swift */; };
 		E91AFEF41F33BF5800C58924 /* CityFlowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91AFEF31F33BF5800C58924 /* CityFlowDelegate.swift */; };
 		E91AFEF71F351F8100C58924 /* CityContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91AFEF61F351F8100C58924 /* CityContentView.swift */; };
+		E93F0D9B1F4B929E0032B09B /* AnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E93F0D9A1F4B929E0032B09B /* AnimationExtension.swift */; };
 		E95D7CAC1F3183270031700A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D7CAB1F3183270031700A /* AppDelegate.swift */; };
 		E95D7CB11F3183270031700A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95D7CAF1F3183270031700A /* Main.storyboard */; };
 		E95D7CB41F3183270031700A /* TravelerDemoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E95D7CB21F3183270031700A /* TravelerDemoApp.xcdatamodeld */; };
@@ -62,6 +63,7 @@
 		E9194F041F3288A4000321CC /* CityCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCollectionView.swift; sourceTree = "<group>"; };
 		E91AFEF31F33BF5800C58924 /* CityFlowDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityFlowDelegate.swift; sourceTree = "<group>"; };
 		E91AFEF61F351F8100C58924 /* CityContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityContentView.swift; sourceTree = "<group>"; };
+		E93F0D9A1F4B929E0032B09B /* AnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationExtension.swift; sourceTree = "<group>"; };
 		E95D7CA81F3183270031700A /* TravelerDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelerDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D7CAB1F3183270031700A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E95D7CB01F3183270031700A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				E91AFEF51F33CC2100C58924 /* Views */,
 				E9194EFE1F326957000321CC /* CityModel.swift */,
 				E95D7CDE1F3188810031700A /* UIExtensions.swift */,
+				E93F0D9A1F4B929E0032B09B /* AnimationExtension.swift */,
 				E9AB911D1F3E27AB006C2233 /* Resources */,
 				E95D7CAB1F3183270031700A /* AppDelegate.swift */,
 				E95D7CBA1F3183270031700A /* Info.plist */,
@@ -505,6 +508,7 @@
 				E95D7CB41F3183270031700A /* TravelerDemoApp.xcdatamodeld in Sources */,
 				E9194EFF1F326957000321CC /* CityModel.swift in Sources */,
 				E9194F051F3288A4000321CC /* CityCollectionView.swift in Sources */,
+				E93F0D9B1F4B929E0032B09B /* AnimationExtension.swift in Sources */,
 				E9AB915E1F4B66C1006C2233 /* RefreshCities.swift in Sources */,
 				E91AFEF41F33BF5800C58924 /* CityFlowDelegate.swift in Sources */,
 				E95D7CDF1F3188810031700A /* UIExtensions.swift in Sources */,
