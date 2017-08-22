@@ -10,16 +10,22 @@ import Foundation
 import UIKit
 import PullToRefresh
 
-open class PullCities: PullToRefresh {
-    
-    public convenience init(at position: Position = .top) {
-    
-        let refreshView = Bundle(for: type(of: self)).loadNibNamed("RefreshIconView", owner: nil, options: nil)!.first as! RefreshIconView
-        let animator =  RefreshIconAnimator(refreshView: refreshView)
-   
-        self.init(refreshView: refreshView, animator: animator, height : refreshView.frame.size.height, position : position)
+class PullCities: PullToRefresh {
+    init(refreshView: RefreshIconView, animator: RefreshIconAnimator, height: CGFloat, position: Position) {
+        self.refreshView = refreshView
+        self.animator = animator
+        self.position = position
     }
-
+    
+    public convenience init(height: CGFloat = 130.0, position: Position = .top) {
+        let refreshView = RefreshIconView()
+        refreshView.frame.size.height = height
+        self.init(refreshView: refreshView, animator: RefreshIconAnimator(refreshView: refreshView), height: height, position: position)
+    }
+    
+//    deinit {
+//        .removeScrollViewObserving()
+//    }
 }
 
 class RefreshIconView: UIView {
@@ -28,11 +34,10 @@ class RefreshIconView: UIView {
 
 class RefreshIconAnimator: NSObject, RefreshViewAnimator {
     
-   // let timer: Timer?
     fileprivate let animationDuration = 0.3
     let animationY = CAKeyframeAnimation(keyPath: "transform.translation.y")
     
-    private let refreshView: RefreshIconView
+    fileprivate let  refreshView: RefreshIconView
    
     init(refreshView: RefreshIconView) {
         self.refreshView = refreshView
@@ -78,5 +83,4 @@ class RefreshIconAnimator: NSObject, RefreshViewAnimator {
     func startLoading() {
         refreshView.layer.timeOffset = animationDuration
     }
-    
 }

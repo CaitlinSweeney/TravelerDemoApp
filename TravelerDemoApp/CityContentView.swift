@@ -26,6 +26,10 @@ class CityContentView: UIView {
     
     // MARK: Views
     
+//    fileprivate lazy var refreshView: PullCities = {
+//        return 
+//    }
+    
     fileprivate lazy var navBarView: NavBarView = {
         return NavBarView(
             title: Resources.popularTitle)

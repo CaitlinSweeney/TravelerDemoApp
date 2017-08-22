@@ -41,6 +41,10 @@ class CityCollectionView: UICollectionView {
     fileprivate lazy var cityDataSourceObject: CityDataSource = {
         return CityDataSource()
     }()
+    
+    // MARK: Properties
+    
+    lazy var pullToRefreshCities: PullCities = PullCities(height: 130, position: .top)
    
     // MARK: Init
     
@@ -69,6 +73,8 @@ class CityCollectionView: UICollectionView {
     
     fileprivate func addSubviews() {
         translatesAutoresizingMaskIntoConstraints = false
+        
+        //pullToRefreshCities.addTo(self)
         
         register(
             CityCell.self,
